@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">&lt;Dev/Portfolio&gt;</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail">
+        <div class="container">
+            <!-- Back button -->
+            <a href="index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Kembali ke Projects
+            </a>
+
+            <!-- Project Header -->
+            <div class="pd-header">
+                <h1 class="pd-title" id="project-title">E-Commerce Platform</h1>
+                <p class="pd-subtitle" id="project-subtitle">Full-featured online marketplace</p>
+                
+                <div class="pd-meta">
+                    <span class="pd-date"><i class="far fa-calendar"></i> 2024</span>
+                    <span class="pd-client"><i class="fas fa-building"></i> Tech Retail Co.</span>
+                    <span class="pd-duration"><i class="far fa-clock"></i> 6 bulan</span>
+                </div>
+
+                <div class="pd-tech-stack">
+                    <span class="tech-badge">React.js</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">AWS</span>
+                    <span class="tech-badge">Stripe</span>
+                    <span class="tech-badge">Redis</span>
+                </div>
+            </div>
+
+            <!-- Project Image -->
+            <div class="pd-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200" alt="Project Screenshot" id="project-image">
+            </div>
+
+            <!-- Project Content -->
+            <div class="pd-content">
+                <div class="pd-main">
+                    <!-- Overview -->
+                    <div class="pd-section">
+                        <h2 class="pd-section-title">Overview</h2>
+                        <p id="project-overview">
+                            Platform e-commerce modern yang dibangun untuk meningkatkan pengalaman berbelanja online. 
+                            Sistem ini mencakup fitur lengkap dari manajemen produk, keranjang belanja, payment gateway, 
+                            hingga dashboard analytics untuk admin.
+                        </p>
+                    </div>
+
+                    <!-- Challenge -->
+                    <div class="pd-section">
+                        <h2 class="pd-section-title">Challenge</h2>
+                        <p>
+                            Klien membutuhkan platform yang dapat menangani ribuan transaksi harian dengan performa tinggi 
+                            dan keamanan maksimal. Integrasi dengan berbagai payment gateway dan sistem inventory real-time 
+                            menjadi tantangan utama.
+                        </p>
+                    </div>
+
+                    <!-- Solution -->
+                    <div class="pd-section">
+                        <h2 class="pd-section-title">Solution</h2>
+                        <ul class="pd-list">
+                            <li>Mengimplementasikan microservices architecture untuk scalability</li>
+                            <li>Menggunakan Redis untuk caching dan meningkatkan performa hingga 60%</li>
+                            <li>Integrasi payment gateway (Stripe, PayPal) dengan sistem fraud detection</li>
+                            <li>Real-time inventory management menggunakan WebSocket</li>
+                            <li>Responsive design dengan mobile-first approach</li>
+                            <li>CI/CD pipeline untuk automated testing dan deployment</li>
+                        </ul>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="pd-section">
+                        <h2 class="pd-section-title">Key Features</h2>
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                <h4>Shopping Cart</h4>
+                                <p>Smart cart dengan rekomendasi produk</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-credit-card"></i>
+                                <h4>Payment Gateway</h4>
+                                <p>Multiple payment methods</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Analytics Dashboard</h4>
+                                <p>Real-time sales monitoring</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-box"></i>
+                                <h4>Inventory Management</h4>
+                                <p>Automated stock tracking</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <h4>User Management</h4>
+                                <p>Role-based access control</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>Mobile Responsive</h4>
+                                <p>Optimized for all devices</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="pd-section">
+                        <h2 class="pd-section-title">Results</h2>
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <h3>60%</h3>
+                                <p>Peningkatan performa</p>
+                            </div>
+                            <div class="result-item">
+                                <h3>10K+</h3>
+                                <p>Transaksi per hari</p>
+                            </div>
+                            <div class="result-item">
+                                <h3>99.9%</h3>
+                                <p>Uptime</p>
+                            </div>
+                            <div class="result-item">
+                                <h3>4.8/5</h3>
+                                <p>User rating</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="pd-section">
+                        <h2 class="pd-section-title">Screenshots</h2>
+                        <div class="pd-gallery">
+                            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600" alt="Screenshot 1">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600" alt="Screenshot 2">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Screenshot 3">
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="pd-section">
+                        <div class="pd-links">
+                            <a href="#" class="pd-link-btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="pd-link-btn btn-secondary">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="pd-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Project Info</h3>
+                        <div class="info-item">
+                            <span class="info-label">Client:</span>
+                            <span class="info-value">Tech Retail Co.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Industry:</span>
+                            <span class="info-value">E-commerce</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Timeline:</span>
+                            <span class="info-value">6 bulan</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Team Size:</span>
+                            <span class="info-value">5 developers</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">My Role:</span>
+                            <span class="info-value">Lead Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Related Projects</h3>
+                        <div class="related-project">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200" alt="Related 1">
+                            <div>
+                                <h4>Analytics Dashboard</h4>
+                                <p>Data visualization</p>
+                            </div>
+                        </div>
+                        <div class="related-project">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=200" alt="Related 2">
+                            <div>
+                                <h4>Booking System</h4>
+                                <p>Hotel management</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card cta-card">
+                        <h3>Interested in working together?</h3>
+                        <p>Let's discuss your next project</p>
+                        <a href="index.html#contact" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Full Stack Developer Portfolio. All rights reserved.</p>
+                <p>Designed & Built with <i class="fas fa-heart"></i> by You</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Optional: Load project data dynamically from URL params
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+        
+        // You can add logic here to load different project data based on projectId
+        // For now, it shows the default e-commerce project
+    </script>
+</body>
+</html>
